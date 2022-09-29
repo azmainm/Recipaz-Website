@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="recipes.css">
+     <title>My Favorite Recipes</title>
+     <script src="./js/jquery-3.5.1.min.js"></script>
+   </head>
+   <!--Side bar toggles when icon is clicked.-->
+   <script>
+     $(document).ready(function(){
+       $("#icon").click(function(){
+         $(".navbar").slideToggle(1000);
+       });
+     });
+   </script>
+   <body>
+  <!--Header image and caption-->
+    <figure id="home">
+      <header><img src="C:/Users/User/HTML Prac/Recipe activity/Header.jpg"> </header>
+    <figcaption id="Author">Azmain Morshed's first "proper" website.</figcaption>
+  </figure>
+  <!--Icon for Nav Bar-->
+  <img id="icon" src="C:/Users/User/HTML Prac/Recipe activity/list_icon.jpg">
+  <!--Navigation Bar-->
+  <nav>
+    <ul class="navbar">
+       <li><a href="#home">Home</a></li>
+       <li><a href="#pizza">Pizza</a></li>
+       <li><a href="#cake">Chocolate Cake</a></li>
+       <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!--Pizza-->
+     <article id="pizza">
+     <h2>Pizza</h2>
+     <img src="C:/Users/User/HTML Prac/Recipe activity/Pizza.jpg" alt="Picture of a pizza" 
+        title= "A delicious pizza."height=500 width=700 >
+     <p id="PizzaOneLiner">
+        <q>It's a Feel-Good Gold Mine.</q>
+     </p>
+     <section id=PizzaSec>
+     <h3>List of Ingredients:</h3> 
+     <ul>
+       <li>Flour</li>
+       <li>Yeast</li>
+       <li>Pizza sauce</li>
+       <li>Mozzarella</li>
+       <br>
+       <h4>Neil Patrick Harris (Yes, Barney..) once said</h4> 
+       <blockquote><q>But magic is like pizza: even when it's bad, it's pretty good.</q></blockquote>
+     </ul>
+     <h3>Steps:</h3>
+     <ol>
+       <li>Add yeast, flour and other necessary ingridients and mix.
+         Let it rest.</li>   
+       <li>Make a pizza shaped dough, put pizza sauce on top,
+            mozarella over that 
+            and your favorite topping (And yes, pineapple counts).
+        </li>
+       <li>Bake at 450 deg.fahr. for about 5-6 mins.</li>   
+       <li>Enjoy!</li>   
+     </ol>
+    </section>
+    </article>
+    <!--Cake-->
+     <article id="cake">
+      <h2>Chocolate Cake</h2>
+      <img src="C:/Users/User/HTML Prac/Recipe activity/Cake.jpg" alt="Picture of a cake" 
+         title= "A delicious homemade chocolate cake."height=500 width=700>
+         <p id="CakeOneLiner">
+            <q>Cake back and relaaaaax.</q>
+         </p>
+      <section id=CakeSec>
+      <h3>List of Ingredients:</h3>
+      <ul>
+        <li>Eggs</li>  
+        <li>Cocoa Powder</li>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Baking Powder</li>
+        <li>Vanilla essence (optional)</li>
+        <br>
+        <h4>Benjamin Franklin's secret advice</h4>
+        <blockquote><q>A great empire, like a great cake, is most easily diminished at the edges.</q></blockquote>
+      </ul>
+      <h3>Steps:</h3>
+      <ol>
+        <li>Take 2 eggs. Whisk it. Add 3/4th cup of sugar to it. Whisk.</li>   
+        <li>Add 3/4th cup of flour, 3 tbsp of cocoapowder, 1 tbsp baking powder.
+            Keep Whisking MAAAAAAN.
+         </li>
+        <li>Add 4.5 tbsp oil, 3 tbsp milk and more if needed to lighten and 
+            FINALLY, 1 tbsp of Vanilla essence.
+        </li>   
+        <li>Bake!</li>
+        <li>Enjoy!</li>   
+      </ol>
+    </section>
+    </article> 
+    <footer id="contact">
+        <p>Wanna add a recipe?<br> 
+            <a href="mailto:azmain.morshed3@gmail.com">email </a>me!
+        </p>
+    </footer>
+   </body>
+</html>
+
